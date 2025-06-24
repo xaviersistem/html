@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog with Categories</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 200px;
+      margin-right: 20px;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      padding: 8px 0;
+    }
+
+    .sidebar li:nth-child(3) {
+      font-style: italic;
+    }
+
+    .main-content {
+      flex: 1;
+    }
+
+    .post-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .post-image {
+      background: #ccc;
+      text-align: center;
+      height: 150px;
+      line-height: 150px;
+      color: #888;
+      font-size: 24px;
+    }
+
+    .post-content {
+      padding: 15px;
+    }
+
+    .post-title {
+      font-weight: bold;
+    }
+
+    .post-meta {
+      color: gray;
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
+
+    .post-desc {
+      margin: 10px 0;
+    }
+
+    .read-more {
+      background-color: #4f00ff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      text-decoration: none;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+
+    .chatbox {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: white;
+    }
+
+    .chatbox-header {
+      background-color: #4f00ff;
+      color: white;
+      padding: 10px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      font-size: 0.9em;
+    }
+
+    .chatbox-messages {
+      padding: 10px;
+      max-height: 150px;
+      overflow-y: auto;
+      font-size: 0.85em;
+    }
+
+    .chatbox-input {
+      display: flex;
+      border-top: 1px solid #eee;
+    }
+
+    .chatbox-input input {
+      flex: 1;
+      border: none;
+      padding: 8px;
+      font-size: 0.9em;
+    }
+
+    .chatbox-input button {
+      background: #4f00ff;
+      color: white;
+      border: none;
+      padding: 0 15px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1 style="padding: 20px;">Blog with Categories</h1>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li>Technology</li>
+        <li>Health</li>
+        <li><em>Lifestyle</em></li>
+        <li>Education</li>
+        <li>Travel</li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="post-card">
+        <div class="post-image">1500 x 300</div>
+        <div class="post-content">
+          <div class="post-title">Post Title 1</div>
+          <div class="post-meta">By John Doe | January 1, 2024 | Tags: #Tech, #AI</div>
+          <div class="post-desc">This is a short description of the blog post. It provides a brief overview of the content to entice readers to read more.</div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="post-image">1500 x 300</div>
+        <div class="post-content">
+          <div class="post-title">Post Title 2</div>
+          <div class="post-meta">By Jane Smith | February 5, 2024 | Tags: #Health, #Wellness</div>
+          <div class="post-desc">This blog post covers various aspects of maintaining a healthy lifestyle, including diet and exercise tips.</div>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chatbox">
+    <div class="chatbox-header">Chat with Other Users</div>
+    <div class="chatbox-messages">
+      <p><strong>John:</strong> Hey, has anyone tried the new tech from XRZ?</p>
+      <p><strong>Jane:</strong> Yes! It's amazing. Totally worth checking out.</p>
+    </div>
+    <div class="chatbox-input">
+      <input type="text" placeholder="Type a message" />
+      <button>Send</button>
+    </div>
+  </div>
+
+</body>
+</html>
